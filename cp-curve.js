@@ -42,7 +42,7 @@ function createCPCurve(containerId, width, height) {
 
   var colorScale = d3.scaleLinear()
     .domain([5, 25, 50, 75, 100])
-    .range(['#F89B29', '#FF0F7B', '#E81CFF', '#8711C1', '#2472FC'])
+    .range(['#F89B29', '#FF0F7B', '#E81CFF', '#8711C1', '#000'])
     .clamp(true);
 
   var defs = svg.append('defs');
