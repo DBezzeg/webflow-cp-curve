@@ -82,9 +82,8 @@ function createCPCurve(containerId, width, height) {
   var g = svg.append('g')
     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-  var isDark      = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  var gridColor   = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)';
-  var axisColor   = isDark ? 'rgba(255,255,255,0.5)'  : 'rgba(0,0,0,0.5)';
+  var gridColor   = 'rgba(0,0,0,0.08)';
+  var axisColor   = 'rgba(0,0,0,0.5)';
   var tickFontSz  = isMobile ? '10px' : '12px';
   var xTickCount  = isMobile ? 5 : isSmall ? 10 : 20;
   var strokeWidth = isMobile ? 4 : isSmall ? 5 : 7;
